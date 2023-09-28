@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/lib/postgresql-42.6.0.jar",
+        ]
+    },
+    "code-runner.executorMap": {
+        "java": "javac -cp .vscode/postgresql-42.6.0.jar $fileName && java -cp .vscode/postgresql-42.6.0.jar:. $fileNameWithoutExt",
+    },
+    "terminal.integrated.env.osx": {
+        "PATH" : "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/lib/"
+    }
+}

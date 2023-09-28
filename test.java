@@ -4,7 +4,7 @@ public class test {
     public static void main(String[] args) {
         try {
             String dbID = "tt",
-                    dbPassword = "xbxhdbxbqm1-",
+                    dbPassword = "tt",
                     dbURL = "jdbc:postgresql://localhost/",
                     dbName = "prac1";
             

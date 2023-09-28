@@ -2,13 +2,4 @@
 2022094093 Kim Dohoon
 Dept. of Data Science
 
-```
-.
-├── .vscode
-│   ├── postgresql-42.6.0.jar
-│   └── settings.json
-├── Assignment1.md
-├── readme.md
-├── test.class
-└── test.java
-```
+2023-2 데이터베이스시스템 및 응용, 과제 관련 파일입니다.

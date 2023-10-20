@@ -12,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class CalendarPanel implements ActionListener {
+	ActionListener listener;
     // Calendar Panel
     JPanel calendarPanel = new JPanel(new BorderLayout());
 
@@ -40,7 +41,8 @@ public class CalendarPanel implements ActionListener {
     JPanel datePane = new JPanel(new GridLayout(0, 7));
 
     // 화면디자인
-	public CalendarPanel() {
+	public CalendarPanel(ActionListener listener) {
+		this.listener = listener;
 		cal = Calendar.getInstance(); //현재날짜
 		year = cal.get(Calendar.YEAR);
 		month = cal.get(Calendar.MONTH)+1;
@@ -143,6 +145,8 @@ public class CalendarPanel implements ActionListener {
 		for (int day = 1; day <= lastDay; day++) {
 			//JLabel lbl = new JLabel(String.valueOf(day), JLabel.CENTER);
             JButton lbl = new JButton();
+			lbl.addActionListener(this.listener);
+			lbl.setActionCommand("DaySelect" + day);
 			cal.set(year, month-1, day);
 			int Week = cal.get(Calendar.DAY_OF_WEEK);
 			if (Week==1) {

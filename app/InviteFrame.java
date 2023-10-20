@@ -3,13 +3,14 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class InvitePanel {
+public class InviteFrame extends JFrame {
     JPanel invitePanel = new JPanel(new GridBagLayout());
 
-    public InvitePanel() {
+    public InviteFrame() {
         JLabel titleLabel = new JLabel("구성원 추가");
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
@@ -35,6 +36,12 @@ public class InvitePanel {
         }
         JButton addButton = new JButton("➕ 구성원 초대");
         invitePanel.add(addButton, gbc);
+        add(invitePanel);        
+        setTitle("구성원");
+        setVisible(true);
+        setSize(500,200);
+        setResizable(false);
+        setLocationRelativeTo(null);
     }
 
     public JPanel getPanel() {

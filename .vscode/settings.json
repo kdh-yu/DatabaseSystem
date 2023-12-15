@@ -2,12 +2,13 @@
     "java.project.referencedLibraries": {
         "include": [
             "lib/**/*.jar",
+            "./.vscode/*.jar",
             "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/lib/postgresql-42.6.0.jar",
         ]
     },
-//    "code-runner.executorMap": {
-//        "java": "javac -cp .vscode/postgresql-42.6.0.jar $fileName && java -cp .vscode/postgresql-42.6.0.jar:. $fileNameWithoutExt",
-//    },
+   "code-runner.executorMap": {
+       "java": "javac -cp '/Users/tt/Documents/Programming Files/2nd grade/Database System/.vscode/postgresql-42.6.0.jar' $fileName && java -cp '/Users/tt/Documents/Programming Files/2nd grade/Database System/.vscode/postgresql-42.6.0.java':. $fileNameWithoutExt",
+   },
     "terminal.integrated.env.osx": {
         "PATH" : "/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home/lib/"
     }
